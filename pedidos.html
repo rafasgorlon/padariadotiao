@@ -1,0 +1,146 @@
+<meta charset="UTF-8">
+
+<section>
+  <form action="/enviar-formulario" method="POST" class="form-pedidos">
+    <fieldset>
+      <legend>Pedido Personalizado</legend>
+
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="nome_usuario" placeholder="Seu nome" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email_usuario" placeholder="Seu e-mail" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone_usuario" placeholder="Seu telefone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="produtos">Produtos:</label>
+        <select id="produtos" name="produtos" required>
+          <option value="">Selecione</option>
+          <option value="pao">Pão</option>
+          <option value="bolos">Bolos</option>
+          <option value="salgados">Salgados</option>
+          <option value="doces">Doces</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="sabor">Sabor/Recheio:</label>
+        <select id="sabor" name="sabor" required>
+          <option value="">Selecione</option>
+          <option value="baunilha">Baunilha</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="fuba">Fubá</option>
+          <option value="churros">Churros</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="tamanho">Tamanho:</label>
+        <select id="tamanho" name="tamanho" required>
+          <option value="">Selecione</option>
+          <option value="pequeno">Pequeno</option>
+          <option value="medio">Médio</option>
+          <option value="grande">Grande</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="orcamento">Orçamento máximo:</label>
+        <input type="number" id="orcamento" name="orcamento" min="0" step="0.01" placeholder="Ex: 150.00">
+      </div>
+
+      <div class="form-group">
+        <label for="observacoes">Observações especiais:</label>
+        <textarea id="observacoes" name="observacoes" rows="4" placeholder="Digite aqui alguma observação..."></textarea>
+      </div>
+
+      <button type="submit" class="botao-enviar">Enviar Pedido</button>
+    </fieldset>
+  </form>
+</section>
+
+<style>
+
+     body{
+
+        background-color: #d4a373;
+    }
+    
+    .form-pedidos {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff8f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-pedidos fieldset {
+  border: 2px solid #a0522d;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.form-pedidos legend {
+  padding: 0 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #a0522d;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #5c3d2e;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d4a373;
+  border-radius: 4px;
+  background: #fffaf5;
+}
+
+.botao-enviar {
+  background-color: #a0522d;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-enviar:hover {
+  background-color: #8b4513;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .form-pedidos {
+    padding: 15px;
+  }
+  .form-pedidos legend {
+    font-size: 1.2rem;
+  }
+}
+
+</style>

@@ -1,0 +1,450 @@
+/* corpo da pagina */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #3b2f2f;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* titulo */
+#container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  padding: 15px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* logo */
+.logo-headee {
+  width: 90px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+h2,
+h3,
+h1 {
+  margin: 20px 0 10px;
+  color: #a0522d;
+}
+
+
+
+p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  max-width: 800px;
+}
+
+img {
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul,
+ol {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+dl {
+  background: #fff3e6;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: #fffaf5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+  background: #ffcc99;
+  color: #5c3d2e;
+}
+
+th,
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+/* rodape da pagina */
+
+.rodape {
+  background: #fff3e6;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 30px;
+  color: #8b4513;
+  display: block;
+  margin: 6px 0;
+
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.botao-comprar {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-comprar:hover {
+  background-color: #bb0000;
+  cursor: pointer;
+}
+
+.botao-comprar:active {
+  transform: scale(0.96);
+}
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+}
+
+.whatsapp img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.whatsapp:hover img {
+  transform: scale(1.1);
+}
+ 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background: #a0522d;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fffaf5;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  display: none;
+  z-index: 1100;
+  min-width: 150px;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  color: #5c3d2e;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background: #ffe0c2;
+}
+
+/* Mostrar menu ao passar o mouse */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.guia-layout {
+  background: #fff3e6;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.guia-layout h2 {
+  color: #a0522d;
+  margin-bottom: 15px;
+}
+
+.guia-layout ul {
+  list-style: disc inside;
+}
+
+.guia-layout li {
+  margin-bottom: 8px;
+  color: #3b2f2f;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+body {
+  padding: 10px;
+}
+
+h1, h2, h3 {
+  word-break: break-word;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  #container {
+    position: relative; /* para evitar sobreposição */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Imagens lado a lado viram coluna */
+  .galeria, img {
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  /* Ajuste de listas */
+  ul, ol {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p, td, th {
+    font-size: 14px;
+  }
+
+  .botao-comprar {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Proporção 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  border-radius: 8px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+   body {
+        font-family: Arial, sans-serif;
+        background-color: #fff8e7;
+        padding: 20px;
+        color: #5a3e2b;
+    }
+    h1 {
+        color: #d35400;
+        text-align: center;
+    }
+    .calculadora {
+        max-width: 400px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        margin: auto;
+    }
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 15px;
+        background: #d35400;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #a04000;
+    }
+    .resultado {
+        margin-top: 20px;
+        background: #fbeed7;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #fff8e7;
+        padding: 20px;
+        color: #5a3e2b;
+    }
+    h1 {
+        color: #d35400;
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .box {
+        flex: 1 1 300px;
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    button {
+        background: #d35400;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+    button:hover {
+        background: #a04000;
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        margin-bottom: 8px;
+    }
+
+    /* Imagens mudando com hover */
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border: 2px solid #d35400;
+  border-radius: 8px;
+}
+
+/* Botões com efeito hover */
+button {
+  background: #e67e22;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #d35400;
+  transform: scale(1.05);
+}
+
+/* Área de produto destacada */
+.produto-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.produto-card:hover {
+  background: #fff8f0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  transform: translateY(-5px);
+}
+
+/* Informações extras aparecem no hover */
+.produto-info {
+  display: none;
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.produto-card:hover .produto-info {
+  display: block;
+}
+
+
+#listaProdutos li {
+  padding: 10px;
+  margin: 5px 0;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#listaProdutos li:focus {
+  outline: none;
+  background: #ffe4b5;
+}

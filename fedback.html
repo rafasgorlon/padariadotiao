@@ -1,0 +1,118 @@
+<meta charset="UTF-8">
+
+<form action="/enviar-formulario" method="POST" class="form-feedback">
+  <fieldset>
+    <legend>Feedback</legend>
+
+    <div class="form-group">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="nome_usuario" placeholder="Seu nome" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email_usuario" placeholder="Seu e-mail" required>
+    </div>
+
+    <div class="form-group">
+      <label for="produtos">Produtos/Serviços:</label>
+      <select id="produtos" name="produtos" required>
+        <option value="">Selecione</option>
+        <option value="pao">Pão</option>
+        <option value="bolos">Bolos</option>
+        <option value="salgados">Salgados</option>
+        <option value="doces">Doces</option>
+        <option value="atendimento">Atendimento</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p><strong>Avaliação Geral</strong> (obrigatório)</p>
+      <label><input type="radio" name="avaliacao" value="excelente" required> Excelente</label>
+      <label><input type="radio" name="avaliacao" value="bom"> Bom</label>
+      <label><input type="radio" name="avaliacao" value="ruim"> Ruim</label>
+    </div>
+
+    <button type="submit" class="botao-enviar">Enviar</button>
+  </fieldset>
+</form>
+
+<style>
+    body{
+
+        background-color: #d4a373;
+    }
+    .form-feedback {
+  max-width: 500px;
+  margin: 20px auto;
+  background: #fff8f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-feedback fieldset {
+  border: 2px solid #a0522d;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.form-feedback legend {
+  padding: 0 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #a0522d;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #5c3d2e;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d4a373;
+  border-radius: 4px;
+  background: #fffaf5;
+}
+
+.form-group input[type="radio"] {
+  margin-right: 6px;
+}
+
+.botao-enviar {
+  background-color: #a0522d;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-enviar:hover {
+  background-color: #8b4513;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .form-feedback {
+    padding: 15px;
+  }
+  .form-feedback legend {
+    font-size: 1rem;
+  }
+}
+
+</style>

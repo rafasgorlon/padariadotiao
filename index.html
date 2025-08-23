@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padaria Do Tião</title>
+</head>
+<link rel="stylesheet" href="estilo/estilo.css">
+<body>
+
+
+  
+<script src="js/script.js"></script>
+  <!-- ÍNICIO DA PADARIA -->
+<header>
+  <table>
+    <tr>
+      <div id="container"></div><img src="images/logo.webp" alt="" class="logo-headee"></div>
+      <td>
+        <h1> Padaria do Tião </h1>
+      </td>
+    </tr>
+  </table>
+</header>
+
+
+
+
+  <!-- HISTÓRIA DA PADARIA -->
+  <h2>Pães, Salgados, Doces e Bolos</h2>
+
+<section class="guia-layout">
+  <h2> Tradição e Qualidade há anos!</h2>
+  <p>Há mais de 20 anos, a Padaria do Tião adoça e encanta a comunidade. com suas delícias. Nossa tradição é passada de
+    geração em geração, garantindo a qualidade e o sabor inconfundível que você já conhece e ama. Utilizamos
+    ingredientes frescos e selecionados, seguindo receitas que são puro afeto e história. Venha saborear nossos pães
+    quentinhos, salgados crocantes, doces e bolos que trazem o gostinho da infância. Mais que uma padaria, somos parte
+    da sua família e da história do nosso bairro, mantendo a paixão e dedicação que nos acompanham há mais de duas
+    décadas.</p>
+</section>
+
+
+
+  <img src="images/pao3.webp" alt="pães frânces " width="360" height="200">
+  <img src="images/bolo.webp" alt="bolo de chocolate" width="360" height="200">
+  <img src="images/salgados.webp" alt="salgados de festa deliciosos" width="360" height ="200"><br>
+  <img src="images/img4.webp" alt="" width="360" height="200">
+  <img src="images/img6.jpg" alt="" width="360" height="200">
+  <!-- LISTA DE COISAS DA PADARIA -->
+
+  <ul>
+
+    <li> Pão Frânces </li>
+    <li> Bolo De Chocolate </li>
+    <li> Salgados </li>
+
+
+  </ul>
+
+
+  <!-- O QUE É O PÃO FRÂNCES -->
+
+  <dl>
+    <dt> Pão Frânces</dt>
+    <dd>O pão francês, também conhecido como pão de sal, pão de trigo, pão massa grossa, careca, pão jacó, cacetinho,
+      média, carioquinha, filão ou pão carioca é um tipo de pão de tamanho pequeno, no formato cilíndrico e alongado,
+      com miolo branco e macio e casca dourada e crocante popular no Brasil. É feito de farinha, sal, água e fermento.
+      Apesar do nome, o pão surgiu no Brasil, onde é bastante popular, e não na França.</dd>
+
+      
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/EKqQnGZYA3M"
+    title="PÃO FRANCÊS DE PADARIA PERFEITO! | Ewerton Santana"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+  
+    <h2>Cardápio</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Categoria</th>
+          <th>Produto</th>
+          <th>Descrição</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+      
+      <div class="dropdown">
+  <button class="dropdown-btn">Cardápio ▼</button>
+  <div class="dropdown-menu">
+    <a href="#paes">Pães</a>
+    <a href="#bolos">Bolos</a>
+    <a href="#salgados">Salgados</a>
+    <a href="#doces">Doces</a>
+    <a href="#tortas">Tortas</a>
+  </div>
+</div>
+
+<table>
+      <tbody>
+        <tr>
+          <td>Pães </td>     
+          <td>Pão Frânces</td>
+          <td>O tradicional pão de sal, crocante por fora e macio por dentro.</td>
+          <td>R$ 27,90 Kg <button class="botao-comprar" onclick="comprar()">Comprar</button> <div class="quantidade">
+        Quantidade: <span id="qtd">1</span>
+        <button onclick="aumentar()">+</button>
+        <button onclick="diminuir()">-</button>
+    </div>
+
+    <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+
+    <div id="detalhes" class="detalhes"></td>
+        </tr>
+        <tr>
+          <td>Bolos</td>
+          <td>Bolo de Chocolate</td>
+          <td>Delicioso bolo de chocolate fofinho e saboroso.</td>
+          <td>R$ 130,00 <button class="botao-comprar" onclick="comprar()">Comprar</button></td>
+        </tr>
+        <tr>
+          <td>Salgados</td>
+          <td>Coxinha</td>
+          <td>Coxinha de frango cremosa e bem recheada.</td>
+          <td>R$ 10,00 <button class="botao-comprar" onclick="comprar()">Comprar</button></td>
+        </tr>
+        <tr>
+          <td>Doces</td>
+          <td>Croissant</td>
+          <td>Croissant bem delicioso e macio.</td>
+          <td>R$ 6,00 <button class="botao-comprar" onclick="comprar()">Comprar</button></td>
+        </tr>
+        <tr>
+          <td>Torta</td>
+          <td>Torta de Limão / 15 - FATIAS</td>
+          <td>Torta de limão bem recheada e saborosa.</td>
+          <td>R$ 120,00 <button class="botao-comprar" onclick="comprar()">Comprar</button></td>
+        </tr>
+        <!-- Adicione mais linhas conforme necessário -->
+      </tbody>
+    </table>
+
+  
+<h1>🍞 Gestão da Padaria</h1>
+<div class="container">
+    <div class="box">
+        <h3>Produtos Disponíveis</h3>
+        <ul id="listaProdutos"></ul>
+    </div>
+
+    <div class="box">
+        <h3>🛒 Carrinho</h3>
+        <ul id="carrinho"></ul>
+    </div>
+
+    <div class="box">
+        <h3>Clientes Frequentes</h3>
+        <ul id="clientes"></ul>
+    </div>
+
+    <div class="box">
+        <h3>📅 Histórico de Pedidos</h3>
+        <ul id="historico"></ul>
+    </div>
+
+    <div class="box">
+        <h3>⭐ Produtos Favoritos</h3>
+        <ul id="favoritos"></ul>
+    </div>
+</div>
+
+    <!-- 
+  HORÁRIO DE FUNCIONAMENTO -->
+
+  </dl>
+
+  <h3> Horário de funcionamento</h3>
+  <table>
+    <thead>
+      <td> Dia da semana</td>
+      <td> Horários </td>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Segunda a Sexta </td>
+        <td> 06:00 às 22:00 </td>
+      </tr>
+      <tr>
+
+        <td> Fim de semana </td>
+        <td> 06:00 às 15:00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ENDEREÇO E MAIS...  -->
+
+<section id="destaques" style="padding:40px; background:#fffaf0;">
+  <h2 style="text-align:center; color:#8b4513;">✨ Produtos em Destaque</h2>
+
+  <div class="produto-card">
+    <img src="images/pao3.webp" alt="Pão Francês" width="200">
+    <h3>Pão Francês</h3>
+    <p>R$ 1,00 (unidade)</p>
+    <button>Comprar</button>
+    <div class="produto-info">
+      Crocante por fora e macio por dentro. Assado diariamente com ingredientes selecionados.
+    </div>
+  </div>
+
+  <div class="produto-card">
+    <img src="images/bolo.webp" alt="Bolo de Chocolate" width="200">
+    <h3>Bolo de Chocolate</h3>
+    <p>R$ 15,00 (fatia)</p>
+    <button>Comprar</button>
+    <div class="produto-info">
+      Fofinho, saboroso e com cobertura cremosa de chocolate.
+    </div>
+  </div>
+
+  <div class="produto-card">
+    <img src="images/salgados.webp" alt="Coxinha" width="200">
+    <h3>Coxinha de Frango</h3>
+    <p>R$ 6,00</p>
+    <button>Comprar</button>
+    <div class="produto-info">
+      Coxinha cremosa, recheada com frango temperado na medida certa.
+    </div>
+  </div>
+</section>
+
+  <h3> Venha conferir! </h3>
+  <footer class="main-footer">
+    <span>Endereço: Rua Tarallo Mendes, 480</span>
+    <span>Telefone: 11.123.456.780</span>
+
+
+    <ol>
+
+      <li> Ligue já para nós </li>
+      <li> Faça o orçamento </li>
+      <li> Aguende a entrega </li>
+
+    </ol>
+
+    
+    <a href="sobre.html">Sobre nós</a><br>
+
+  </footer>
+<div class="rodape">
+  <h2>Fale conosco</h2><br>
+  <p></p>
+  <a href="contato.html"> Contato Geral​</a><br>
+  <a href="pedidos.html"> Pedidos Especiais​</a><br>
+  <a href="fedback.html"> Feedback​</a><br>
+  <a href="cadastro.html"> Cadastro ​</a>
+</div>
+<button id="topoBtn" onclick="voltarAoTopo()">↑</button>
+</body>
+
+<a href="https://wa.me/5511999999999" class="whatsapp" target="_blank">
+  <img src="images/what.webp" alt="WhatsApp" />
+</a>
+
+</html>
